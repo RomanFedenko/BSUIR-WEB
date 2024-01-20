@@ -1,0 +1,380 @@
+*,::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbig ul{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color:rgb(55, 60, 63);
+}
+
+.navbig ul li{
+    float: left;
+}
+.navbig li a{
+    display: block;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.navbig li a:hover{
+    background-color: black;
+}
+
+.navbig::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navsmall ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(55, 60, 63);
+    overflow: hidden;
+}
+
+.navsmall li{
+    float: left;
+}
+
+.navsmall li .flev{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.navsmall li .navig{
+    padding-left: 20px;
+}
+
+.navsmall li .qwer{
+    display: inline-block;
+    position: relative;
+}
+
+.navsmall li .qwer:hover{ 
+   background-color: black;
+}
+
+.navsmall li .content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:rgb(55, 60, 63);
+    min-width: 140px;
+    position: fixed!important;
+    z-index: 1;
+}
+
+.navsmall li .content a{
+    font-size: 12px;
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navsmall li .content a:hover{
+    background-color: black;
+}
+
+.navsmall li .qwer:hover .content{
+    display: block;
+} 
+
+.header .afptrwww{
+    padding: 30px 0px 40px 30px;
+    background-color:rgb(22, 176, 195) ;
+}
+
+.header .afptrwww .awesomefree{
+    font-size: 20px;
+    color: white;
+}
+
+.header .afptrwww .wwwblaz{
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+}
+
+.header .afptrwww .wwwblaz a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .afptrwww .wwwblaz .wwwblasrobar{
+    flex-grow: 1;
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+}
+
+.header .afptrwww .wwwblaz .arrowblazr{
+    font-size: 10px;
+    padding-right: 85px;
+}
+
+.header .iltrhopf{
+    display: flex;
+    flex-direction: row; 
+}
+
+.header .iltrhopf .textiml{
+    padding: 30px 30px 30px 25px;
+    flex-grow: 1;
+    font-size: 11px;
+    background-color:  rgb(39,33,44);
+    color: rgb(146,130,160);
+    text-decoration: none;
+}
+
+.header .iltrhopf .arrowiml{
+    padding: 30px;
+    background-color:rgb(188,49,131);
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.section .images{
+    display: flex;
+    flex-direction: column;
+}
+
+.section .images img{
+    width:100%;
+    height: auto;
+}
+
+.article{
+    padding: 15px 32px 100% 25px;
+    font-size: 16px;
+    background-color: rgb(235, 235,235);
+    line-height: 24px;
+}
+
+.article h3{
+    color:rgb(22, 176, 195) ;
+}
+.article .textone{
+    text-align: left;
+}
+.article .texttwo{
+    display: none;
+    text-align: left;
+}
+
+@media only screen and (min-width: 640px){
+    .navsmall li .flev{
+        padding: 20px;
+        font-size: 28px;
+    }
+    .navsmall li .navig{
+        padding-left: 40px;
+    }
+    .navsmall li .content a{
+        font-size: 18px;
+        padding: 18px 18px;
+    }
+    .header .afptrwww{
+        padding: 50px 0px 80px 60px;
+    }
+    
+    .header .afptrwww .awesomefree{
+        font-size: 40px;
+    }
+    
+    .header .afptrwww .wwwblaz{
+        margin-top: -20px;
+    }
+    
+    .header .afptrwww .wwwblaz .wwwblasrobar{
+        font-size: 22px;
+    }
+    
+    .header .afptrwww .wwwblaz .arrowblazr{
+        font-size: 20px;
+        padding-right: 170px;
+    }
+
+    .header .iltrhopf .textiml{
+        padding: 60px 60px 60px 50px;
+        font-size: 22px;
+    }
+
+    .header .iltrhopf .arrowiml{
+        padding: 60px;
+        font-size: 28px;
+    }
+
+    .article{
+        padding: 30px 90px 100% 50px;
+        font-size: 25px;
+        line-height: 42px;
+    }
+   
+}
+
+@media only screen and (min-width: 980px){
+    .navsmall{
+        display: none;
+    }
+    .navbig ul{
+        display: block;
+    }
+    .navbig li a{
+        display: block;
+        padding: 35px 0px 35px 40px;
+        font-size: 15px;
+    }
+
+    .header .afptrwww{
+        padding: 100px 0px 160px 65px;
+    }
+    
+    .header .afptrwww .awesomefree{
+        font-size: 60px;
+    }
+    
+    .header .afptrwww .wwwblaz{
+        margin-top: -30px;
+    }
+    
+    .header .afptrwww .wwwblaz .wwwblasrobar{
+        font-size: 32px;
+    }
+    
+    .header .afptrwww .wwwblaz .arrowblazr{
+        font-size: 30px;
+        padding-right: 300px;
+    }
+
+    .header .iltrhopf .textiml{
+        padding: 100px 80px 100px 60px;
+        font-size: 32px;
+    }
+
+    .header .iltrhopf .arrowiml{
+        padding: 90px;
+        font-size: 40px;
+    }
+
+    .section .images{
+        flex-direction: row;
+    }
+
+    .section .images img{
+        width:33.33333%;
+    }
+
+    .article{
+        padding: 25px 80px 100% 45px;
+        line-height: 24px;
+        column-count: 2;
+        column-gap:80px;
+        font-size: 17px;
+    }
+    .article h3{
+        column-span: all;
+    }
+
+    .article .textone{
+        margin-top: -17px;
+    }
+
+    .article .texttwo{
+        display: block;
+    }
+}
+    
+
+
+@media only screen and (min-width: 1024px){
+    .navsmall{
+        display: none;
+    }
+    .navbig ul{
+        display: block;
+    }
+    .navbig li a{
+        display: block;
+        padding: 45px 0px 45px 60px;
+        font-size: 15px;
+    }
+
+    .header .afptrwww{
+        padding: 150px 0px 210px 85px;
+    }
+    
+    .header .afptrwww .awesomefree{
+        font-size: 75px;
+    }
+    
+    .header .afptrwww .wwwblaz{
+        margin-top: -40px;
+    }
+    
+    .header .afptrwww .wwwblaz .wwwblasrobar{
+        font-size: 42px;
+    }
+    
+    .header .afptrwww .wwwblaz .arrowblazr{
+        font-size: 40px;
+        padding-right: 170px;
+    }
+
+    .header .iltrhopf .textiml{
+        padding: 110px 80px 110px 75px;
+        font-size: 38px;
+    }
+
+    .header .iltrhopf .arrowiml{
+        padding: 110px;
+        font-size: 50px;
+    }
+
+    .section .images{
+        flex-direction: row;
+    }
+
+    .section .images img{
+        width:33.33333%;
+    }
+
+    .article{
+        padding: 35px 90px 100% 75px;
+        line-height: 24px;
+        column-count: 2;
+        column-gap:80px;
+        font-size: 19px;
+    }
+    .article h3{
+        column-span: all;
+    }
+
+    .article .textone{
+        margin-top: -17px;
+    }
+
+    .article .texttwo{
+        display: block;
+    }
+    
+}
